@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-
+// commentaire pour test
 app.get("/auth/:secret", (req, res) => {
   const { secret } = req.params;
   const response = auth(secret);
